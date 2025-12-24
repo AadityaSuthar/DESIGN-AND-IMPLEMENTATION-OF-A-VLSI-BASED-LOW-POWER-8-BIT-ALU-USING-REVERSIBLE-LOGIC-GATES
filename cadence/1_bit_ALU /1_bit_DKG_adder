@@ -1,0 +1,20 @@
+# 1-bit Reversible Full Adder using DKG Gate
+
+## Description
+This design implements a 1-bit reversible full adder using the DKG reversible
+logic gate. The DKG gate is capable of generating both Sum and Carry outputs
+within a single reversible structure.
+
+## Inputs and Outputs
+- Inputs: A, B, Cin
+- Outputs: Sum, Cout
+
+## Design Details
+The DKG gate combines XOR and carry-generation logic efficiently, reducing the
+number of reversible gates and garbage outputs compared to multi-gate adder
+implementations.
+
+## Role in This Project
+This DKG-based full adder is implemented and analyzed as an alternative
+reversible adder architecture. Its structure and efficiency are compared with
+the Peres-gate-based full adder used in the final 8-bit ALU design.
