@@ -1,0 +1,26 @@
+# DKG Gate
+
+The DKG gate is a 4×4 reversible logic gate specifically designed for efficient
+implementation of arithmetic operations, particularly full adders. It is known
+for producing both Sum and Carry outputs within a single reversible gate,
+thereby reducing gate count and garbage outputs.
+
+## Input–Output Relationship
+- Inputs: A, B, Cin, D
+- Outputs:
+  - P = A
+  - Q = B
+  - R = A ⊕ B ⊕ Cin  (Sum)
+  - S = (A · B) + (Cin · (A ⊕ B)) ⊕ D  (Carry)
+
+## Importance in Reversible Design
+The DKG gate is optimized for reversible arithmetic circuits as it combines
+XOR and carry-generation logic efficiently. By generating Sum and Carry
+simultaneously, it simplifies reversible full adder design compared to
+multi-gate implementations.
+
+## Role in This Project
+In this project, the DKG gate is implemented using transmission-gate-based logic
+in Cadence Virtuoso. It is evaluated as an alternative reversible building
+block for full adder realization and compared with Peres-gate-based designs in
+terms of complexity and suitability for ALU construction.
