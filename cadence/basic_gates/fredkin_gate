@@ -1,0 +1,23 @@
+# Fredkin Gate
+
+The Fredkin gate is a 3×3 reversible logic gate also known as the
+Controlled-SWAP (CSWAP) gate. It conditionally swaps its two data inputs based
+on the value of a control input, while preserving reversibility.
+
+## Input–Output Relationship
+- Inputs: A (control), B, C
+- Outputs:
+  - P = A
+  - Q = A'·B + A·C
+  - R = A·B + A'·C
+
+## Importance in Reversible Design
+The Fredkin gate performs data routing and conditional selection without
+information loss, which makes it useful in reversible control logic and
+multiplexing operations.
+
+## Role in This Project
+In this project, the Fredkin gate is implemented using transmission-gate-based
+logic in Cadence Virtuoso. Although it is not the primary gate used for
+arithmetic operations, it is included to demonstrate reversible control and
+data-flow manipulation within the ALU architecture.
