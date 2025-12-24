@@ -1,0 +1,26 @@
+# BJN Gate
+
+The BJN gate is a 4×4 reversible logic gate proposed for efficient realization
+of arithmetic circuits, particularly reversible full adders. It is designed to
+generate Sum and Carry outputs with reduced garbage outputs and optimized gate
+count.
+
+## Input–Output Relationship
+- Inputs: A, B, Cin, D
+- Outputs:
+  - P = A
+  - Q = B
+  - R = A ⊕ B ⊕ Cin  (Sum)
+  - S = (A · B) + (B · Cin) + (A · Cin) ⊕ D  (Carry)
+
+## Importance in Reversible Design
+The BJN gate efficiently combines XOR and majority-based carry generation
+within a single reversible structure. This makes it suitable for low-power
+arithmetic applications where minimizing complexity and information loss is
+critical.
+
+## Role in This Project
+In this project, the BJN gate is implemented at the transistor level using
+transmission-gate-based logic in Cadence Virtuoso. It is studied as an
+alternative reversible full adder implementation and compared with Peres- and
+DKG-gate-based designs to evaluate suitability for the 8-bit ALU.
