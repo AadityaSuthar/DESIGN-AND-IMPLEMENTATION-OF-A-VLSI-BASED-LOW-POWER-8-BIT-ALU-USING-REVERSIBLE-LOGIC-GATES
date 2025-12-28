@@ -1,0 +1,16 @@
+# 1-bit Reversible Subtractor using DKG Gate
+
+## Description
+This design implements a 1-bit reversible subtractor using the DKG reversible
+logic gate. The subtractor computes the difference between two input bits while
+preserving reversibility and minimizing information loss.
+
+## Inputs and Outputs
+- Inputs: A (minuend), B (subtrahend), Bin (borrow-in)
+- Outputs: Diff, Bout (borrow-out)
+
+## Design Details
+The DKG gate efficiently supports arithmetic operations by combining XOR-based
+difference generation and borrow logic within a single reversible structure.
+The Difference output is obtained using XOR operations, while the Borrow output
+is generated through conditional lo
