@@ -1,0 +1,39 @@
+# 8-bit Reversible Adder and Subtractor
+
+## Description
+This module implements an 8-bit reversible adder and subtractor by cascading
+eight identical 1-bit reversible arithmetic blocks. The design supports both
+addition and subtraction operations while preserving reversibility and
+minimizing information loss.
+
+## Architecture
+The 8-bit structure is formed by connecting the carry (or borrow) output of
+each 1-bit stage to the next higher bit stage. A common control signal is used
+to select between addition and subtraction modes.
+
+## Operation
+- **Addition Mode**:
+  - The circuit performs A + B using reversible full adders.
+  - Carry propagates from the least significant bit (LSB) to the most
+    significant bit (MSB).
+
+- **Subtraction Mode**:
+  - The circuit performs A − B using reversible subtraction logic.
+  - Borrow propagation follows a similar cascading structure as carry.
+
+## Design Details
+Each 1-bit arithmetic block is implemented using reversible logic gates
+(DKG / Peres-based structures), ensuring that all operations maintain a
+one-to-one input–output mapping. The modular design allows easy scaling and
+simplifies verification.
+
+## Importance in Reversible ALU Design
+The 8-bit adder and subtractor form the core arithmetic unit of the reversible
+ALU. Implementing these operations using reversible logic demonstrates the
+feasibility of low-power arithmetic circuits suitable for future computing
+paradigms.
+
+## Role in This Project
+In this project, the 8-bit reversible adder and subtractor serve as the primary
+arithmetic engine of the ALU. The design is implemented and validated using
+Cadence Virtuoso and forms the foundation for higher-level ALU operations.
